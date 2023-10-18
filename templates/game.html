@@ -1,0 +1,19 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Guess My Number</title>
+    <meta name="description" content="Number Guessing Game with Flask">
+  </head>
+  <body>
+    <h1>Number Guessing Game</h1>
+
+    <ul>
+        {% for item in number %}
+        <li><a href="/guess/{{ item }}">{{ item }}</a></li>
+        {% endfor %}
+    </ul>
+
+    <p>Click to get started: <a href="/guess">Play Game</a></p>
+  </body>
+</html>
